@@ -48,7 +48,7 @@ nav a {
 
 .header {
     background-color: #FFF8F3;
-    background-image: url('../images/header_bg.png'),url('../images/developer.png');
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, top left;
 }
@@ -228,7 +228,8 @@ footer {
     margin-right: 25px;
 }
 
-.contact input[type="text"], .contact input[type="email"],
+.contact input[type="text"],
+.contact input[type="email"],
 .contact textarea {
     display: block;
     margin-bottom: 25px;
@@ -238,4 +239,18 @@ footer {
     background: #FFF;
     width: 100%;
     border: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    #what-i-do-description {
+        padding: 10px;
+    }
 }
