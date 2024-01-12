@@ -201,6 +201,7 @@ main {
 
 .resume-container {
     display: flex;
+    gap:50px;
 }
 
 .resume-container hr {
@@ -240,17 +241,50 @@ footer {
     width: 100%;
     border: 0px;
 }
-
-.hide {
-    display: none;
-}
-
 @media screen and (max-width:576px) {
-    .skills-container {
+    nav li{
+        padding-bottom: 20px;
+    }
+    nav >ul, .banner, nav, .skills-container, .resume-container,
+    footer, .about-info-container  {
         flex-direction: column;
     }
-
-    #what-i-do-description {
+    nav{
+        margin: 0px;
+    }
+    #what-i-do-description, .banner {
         padding: 10px;
+    }
+    .header{
+        background-image: none;
+    }
+    footer, .about{
+        padding: 10px;
+        align-items: center;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .contact input[type="text"],
+.contact input[type="email"],
+.contact textarea{
+    width: 70%;
+}
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    footer{
+        padding: 30px;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .header{
+        background-image: none;
     }
 }
